@@ -1,0 +1,106 @@
+body {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  text-align: center;
+}
+
+.menu {
+  background-color: #8ce006;
+  border-radius: 2px;
+  color: #fff;
+  display: inline-block;
+  padding: 6px 12px;
+  position: relative;
+  top: 20px;
+}
+
+.menu:hover {
+  cursor: pointer;
+}
+
+.ul-menu {
+  background: #8ce006;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  left: -20px;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  position: absolute;
+  top: 0px;
+  -webkit-transition: opacity 0.2s ease-in-out, top 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out, top 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out, top 0.2s ease-in-out;
+}
+
+.ul-menu:after {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  top: -7px;
+  content: "";
+  display: inline-block;
+  height: 10px;
+  left: 50px;
+  position: absolute;
+  width: 10px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.ul-menu li {
+  border-bottom: 1px solid #ccc;
+  list-style-type: none;
+  margin: 0;
+  padding: 7px;
+  width: 100px;
+}
+
+.ul-menu li:hover {
+  background-color: #9cf157;
+}
+
+.ul-menu .knjiga1:hover {
+  background-color: #f15757;
+  color: #fff !important;
+}
+
+.ul-menu .knjiga2:hover {
+  background-color: #fccc48;
+  color: #fff !important;
+}
+
+.ul-menu .knjiga3:hover {
+  background-color: #def849;
+  color: #fff !important;
+}
+
+.ul-menu .knjiga4:hover {
+  background-color: #56fdbd;
+  color: #fff !important;
+}
+
+.ul-menu .knjiga5:hover {
+  background-color: #4d91f7;
+  color: #fff !important;
+}
+
+.ul-menu li:last-child {
+  border-bottom: none;
+}
+
+.ul-menu li a {
+  color: #e04006;
+  text-decoration: none;
+}
+
+.ul-menu li:hover a {
+  color: #fff !important;
+}
+
+.ul-menu.share {
+  opacity: 1;
+  top: 45px;
+}
